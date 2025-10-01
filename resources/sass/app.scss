@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=IBMPlexSans');
+@import 'variables';
+@import '~bootstrap/scss/bootstrap';
+@import '~datatables.net-dt/css/dataTables.dataTables.min.css';
+
+:root {
+  --blue: #00aeef;
+  --blue-dark: #008ec7;
+  --black-blue: #005b7f;
+}
+
+.btn-primary {
+  background: var(--blue);
+  border-color: var(--blue);
+
+  &:hover {
+    background: var(--blue-dark);
+    border-color: var(--blue-dark);
+  }
+}
+
+.text-primary {
+  color: var(--blue) !important;
+}
+
+.text-black-blue {
+  color: var(--black-blue);
+}
+
+.logo {
+  width: 144px;
+  height: 65px;
+}
+
+.form-control::placeholder {
+  color: #d0d5dd;
+  font-size: 14px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--bs-border-color);
+}
+
+table.dataTable.generic-table tr {
+  border: 1px solid #dddddd;
+}
+
+div.dt-container .dt-search input {
+  border-color: #ffffff;
+  background: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 10px;
+  color: var(--blue);
+  height: 29px;
+}
+
+div.dt-container div.dt-layout-row {
+  margin: 0;
+
+  :first-child {
+    margin-bottom: 2px;
+  }
+}
+
+div.dt-container.dt-empty-footer {
+  background: #eeeef1;
+
+  .dt-layout-cell:not(.dt-layout-full) {
+    padding: 5px;
+  }
+
+  tbody>tr:last-child>* {
+    border-bottom: none !important;
+  }
+}
+
+table.dataTable>tbody>tr>th, table.dataTable>tbody>tr>td {
+  padding: 5px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+table.dataTable>tbody>tr {
+  background: #ffffff;
+
+  &:hover {
+    background: #f7f7f7;
+  }
+}
+
+table.dataTable>thead>tr>th, table.dataTable>thead>tr>td {
+  padding: 4px 17px 4px 4px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+table.generic-table.dataTable thead th {
+  background-color: var(--blue);
+  color: #ffffff;
+  border-bottom: none;
+}
+
+table.dataTable thead .sorting:after {
+  opacity: 0.5;
+  content: "\e150";
+}
+
+.generic-table {
+  .symbol_isin {
+    width: 121.20px;
+  }
+  .company {
+    width: 361px;
+  }
+  .price {
+    width: 99.39px;
+  }
+  .var {
+    width: 76.62px;
+  }
+  .date {
+    width: 122px;
+  }
+  .category {
+    width: 90.28px;
+  }
+  .actions {
+    width: 40px;
+  }
+}
